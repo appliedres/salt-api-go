@@ -1,4 +1,4 @@
-module github.com/ebusto/salt-api-go
+module github.com/appliedres/salt-api-go
 
 go 1.21
 

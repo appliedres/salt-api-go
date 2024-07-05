@@ -3,7 +3,7 @@ package event
 import (
 	"reflect"
 
-	"github.com/ebusto/salt-api-go"
+	"github.com/appliedres/salt-api-go"
 )
 
 // Parser represents an event parser.

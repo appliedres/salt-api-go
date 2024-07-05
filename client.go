@@ -14,6 +14,7 @@ type Client struct {
 	Headers map[string]string
 	Server  string
 	Token   string
+	Cookies []*http.Cookie
 
 	Events  *Events
 	Jobs    *Jobs
@@ -65,6 +66,10 @@ func (c *Client) do(ctx context.Context, method, path string, data any, fn respo
 
 	for key, val := range c.Headers {
 		req.Header.Set(key, val)
+	}
+
+	for _, cookie := range c.Cookies {
+		req.AddCookie(cookie)
 	}
 
 	if len(c.Token) > 0 {

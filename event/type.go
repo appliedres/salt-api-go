@@ -3,7 +3,7 @@ package event
 import (
 	"regexp"
 
-	"github.com/ebusto/salt-api-go"
+	"github.com/appliedres/salt-api-go"
 )
 
 // Event represents a parsed event.

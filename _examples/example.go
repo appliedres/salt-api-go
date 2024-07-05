@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/ebusto/salt-api-go"
-	"github.com/ebusto/salt-api-go/event"
+	"github.com/appliedres/salt-api-go"
+	"github.com/appliedres/salt-api-go/event"
 )
 
 func main() {

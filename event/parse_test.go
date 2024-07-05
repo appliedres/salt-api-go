@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ebusto/salt-api-go"
+	"github.com/appliedres/salt-api-go"
 	"github.com/kr/pretty"
 	"github.com/stretchr/testify/assert"
 )
