@@ -8,14 +8,14 @@ import (
 type Object map[string]any
 
 type Command struct {
-	Arguments  []string `json:"arg,omitempty"`
-	Client     string   `json:"client"`
-	Function   string   `json:"fun"`
-	Keywords   Object   `json:"kwarg,omitempty"`
-	Match      string   `json:"match,omitempty"`
-	Target     string   `json:"tgt,omitempty"`
-	TargetType string   `json:"tgt_type,omitempty"`
-	Timeout    int      `json:"timeout,omitempty"`
+	Arguments  any    `json:"arg,omitempty"`
+	Client     string `json:"client"`
+	Function   string `json:"fun"`
+	Keywords   Object `json:"kwarg,omitempty"`
+	Match      string `json:"match,omitempty"`
+	Target     string `json:"tgt,omitempty"`
+	TargetType string `json:"tgt_type,omitempty"`
+	Timeout    int    `json:"timeout,omitempty"`
 }
 
 func (c *Client) Run(ctx context.Context, cmd *Command, fn ReturnFunc) error {
