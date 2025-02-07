@@ -7,14 +7,16 @@ import (
 	"encoding/json"
 	"io"
 	"net/http"
+	"time"
 )
 
 type Client struct {
-	Client  *http.Client
-	Headers map[string]string
-	Server  string
-	Token   string
-	Cookies []*http.Cookie
+	Client      *http.Client
+	Headers     map[string]string
+	Server      string
+	Token       string
+	TokenExpire time.Time
+	Cookies     []*http.Cookie
 
 	Events  *Events
 	Jobs    *Jobs
